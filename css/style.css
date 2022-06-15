@@ -1,0 +1,223 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-color: var(--pale-blue);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: calc(100vh - 1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summary {
+    width: 450px;
+    height: 697px;
+    padding-bottom: 2rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 1.3rem;
+    box-shadow: 0 2rem 2rem -1rem #c7cff2;
+}
+
+.order-summary img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 1.3rem 1.3rem 0 0;
+}
+
+.order-summary header {
+    width: 75%;
+    margin: auto;
+}
+
+.order-summary h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 2.8rem;
+}
+
+.order-summary header p {
+    font-size: 1.005rem;
+    color: var(--desaturated-blue);
+    line-height: 1.6rem;
+    margin-top: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.order-summary h1, h2 {
+    color: var(--dark-blue);
+}
+
+.plan {
+    height: 6.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: .8rem;
+}
+
+.plan, .proceed {
+    width: 78.5%;
+    margin: 0 auto;
+}
+
+.annual-plan div {
+    float: right;
+    max-height: 48px;
+    text-align: left;
+}
+
+.plan h2 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.annual-plan p {
+    margin-top: .3rem;
+    color: var(--desaturated-blue);
+    font-size: 1.04rem;
+}
+
+.annual-plan img {
+    margin-left: 1.5rem;
+    margin-right: 1.2rem;
+}
+
+.change {
+    margin-right: 1.5rem;
+    font-size: .88rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.change:hover {
+    color: hsla(245, 75%, 52%, .7);
+    text-decoration: none;
+}
+
+.proceed {
+    padding: 1rem;
+    margin: 2rem 0;
+    border: none;
+    background-color: var(--bright-blue);
+    color: white;
+    font-size: .96rem;
+    font-weight: 700;
+    border-radius: .7rem;
+    box-shadow: 0 1.2rem 1rem .3rem var(--pale-blue);
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.proceed:hover {
+    background-color: hsla(245, 75%, 52%, .7);
+}
+
+.cancel {
+    display: inline-block;
+    font-size: .94rem;
+    font-weight: 900;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+    transition: .1s ease-in-out;
+}
+
+.cancel:hover {
+    color: black;
+}
+
+/*.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}*/
+
+@media (max-width: 480px) {
+    .order-summary {
+        width: 327px;
+        height: 568px;
+    }
+
+    .order-summary header {
+        width: 80%;
+    }
+
+    .order-summary h1 {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+
+    .order-summary header p {
+        font-size: .95rem;
+        line-height: 1.55rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .annual-plan img {
+        margin-left: 1rem;
+        margin-right: 1.2rem;
+    }
+
+    .plan h2 {
+        font-size: .9rem;
+        margin-top: .1rem;
+    }
+
+    .annual-plan p {
+        font-size: .9rem;
+        margin-top: .2rem;
+    }
+
+    .change {
+        font-size: .8rem;
+    }
+
+    .plan {
+        height: 5rem;
+    }
+
+    .plan, .proceed {
+        width: 85.3%;
+    }
+
+    .change {
+        margin-right: 1rem;
+    }
+
+    .proceed {
+        margin: 1.5rem auto;
+    }
+}
