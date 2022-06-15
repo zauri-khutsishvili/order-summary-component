@@ -4,8 +4,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-l6bZ8n1Rn9](https://www.frontendmentor.io/solutions/nft-preview-card-component-l6bZ8n1Rn9)
-- Live Site URL: [https://zauri-khutsishvili.github.io/nft-preview-card-component/](https://zauri-khutsishvili.github.io/nft-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-GL3SDJE6-L](https://www.frontendmentor.io/solutions/order-summary-component-GL3SDJE6-L)
+- Live Site URL: [https://zauri-khutsishvili.github.io/order-summary-component/](https://zauri-khutsishvili.github.io/order-summary-component/)
 
 ## Built with
 
