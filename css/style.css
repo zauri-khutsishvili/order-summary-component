@@ -126,8 +126,8 @@ body {
 }
 
 .proceed {
-    padding: 1rem;
-    margin: 2rem 0;
+    padding: .92rem;
+    margin: 2rem 0 1.9rem;
     border: none;
     background-color: var(--bright-blue);
     color: white;
