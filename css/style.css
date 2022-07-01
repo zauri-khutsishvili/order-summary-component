@@ -64,10 +64,10 @@ body {
 .order-summary__description {
     font-size: 1.65rem;
     color: var(--desaturated-blue);
-    line-height: 2.6rem;
-    letter-spacing: -0.013em;
-    margin-top: 1.4rem;
-    margin-bottom: 2.18rem;
+    line-height: 1.5758em;
+    letter-spacing: -0.015em;
+    margin-top: 1.5rem;
+    margin-bottom: 2.08rem;
 }
 
 .order-summary__plan {
@@ -105,7 +105,6 @@ body {
 .order-summary__annual-plan div p:nth-child(2) {
     color: var(--desaturated-blue);
     font-size: 1.65rem;
-    letter-spacing: 0.003em;
 }
 
 .order-summary__change {
@@ -179,7 +178,7 @@ body {
 
     .order-summary__description {
         font-size: 1.5rem;
-        line-height: 2.5rem;
+        line-height: 1.66em;
         margin: 0 .5rem 2.4rem;
     }
 
