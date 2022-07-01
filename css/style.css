@@ -65,9 +65,9 @@ body {
     font-size: 1.65rem;
     color: var(--desaturated-blue);
     line-height: 1.5758em;
-    letter-spacing: -0.015em;
-    margin-top: 1.5rem;
-    margin-bottom: 2.08rem;
+    letter-spacing: -0.013em;
+    margin-top: 1.6rem;
+    margin-bottom: 1.98rem;
 }
 
 .order-summary__plan {
