@@ -6,7 +6,7 @@
     --dark-blue: hsl(223, 47%, 23%);
 }
 
-*, *::after, *::before {
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
@@ -14,38 +14,39 @@
 
 html {
     font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0 6.4%;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url("../images/pattern-background-desktop.svg");
     background-color: var(--pale-blue);
     background-size: contain;
     background-repeat: no-repeat;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .order-summary {
     max-width: 45rem;
-    height: 69.7rem;
+    min-height: 69.7rem;
     margin-top: 0.1rem;
     background-color: white;
     text-align: center;
     border-radius: 2rem;
-    box-shadow: 0 3.9rem 3.5rem -1.6rem hsl(245, 70%, 87.5%);
-    transition: max-width .08s ease-in-out;
+    box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.151826);
+    transition: max-width .1s ease, min-height .1s ease;
+    overflow: hidden;
 }
 
 .order-summary__image {
     max-width: 100%;
     vertical-align: middle;
-    border-radius: 2rem 2rem 0 0;
 }
 
 .order-summary__header {
@@ -63,8 +64,8 @@ html {
 .order-summary__description {
     font-size: 1.6rem;
     color: var(--desaturated-blue);
-    line-height: 2.56rem;
-    margin-top: 1.7rem;
+    line-height: 2.6rem;
+    margin-top: 1.58rem;
     margin-bottom: 2rem;
 }
 
@@ -72,7 +73,7 @@ html {
     width: 78.5%;
     height: 9.92rem;
     margin: 0 auto;
-    background-color: var(--very-pale-blue);
+    background-color: hsl(230, 75%, 98%)/*var(--very-pale-blue)*/;
     border-radius: 1.28rem;
     display: flex;
     justify-content: space-between;
@@ -101,7 +102,8 @@ html {
 
 .order-summary__annual-plan div p:nth-child(2) {
     color: var(--desaturated-blue);
-    font-size: 1.65rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.017em;
 }
 
 .order-summary__change {
@@ -122,17 +124,17 @@ html {
 .order-summary__proceed {
     all: unset;
     width: 78.5%;
-    padding: 1.45rem 0;
-    margin: 3.1rem 0 3.2rem;
+    padding: 1.4rem 0 1.5rem;
+    margin: 3.1rem 0;
     border: none;
     background-color: var(--bright-blue);
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Red Hat Display', sans-serif;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.015em;
     border-radius: 1.1rem;
-    box-shadow: 0 2.2rem 1.7rem 0 hsl(246, 76%, 92%);
+    box-shadow: 0 2rem 2rem rgba(56, 42, 225, 0.190291);
     cursor: pointer;
     transition: .15s ease-in-out;
 }
@@ -144,6 +146,7 @@ html {
 .order-summary__cancel {
     all: unset;
     display: block;
+    padding-right: .2rem;
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 900;
@@ -156,10 +159,10 @@ html {
     color: black;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     .order-summary {
         max-width: 32.7rem;
-        height: 56.7rem;
+        min-height: 56.7rem;
     }
 
     .order-summary__header {
@@ -173,14 +176,13 @@ html {
     }
 
     .order-summary__description {
-        height: 7.5rem;
         font-size: 1.5rem;
         line-height: 2.5rem;
         margin: 0 .5rem 2.4rem;
     }
 
     .order-summary__plan {
-        width: 85.3%;
+        width: 85.325%;
         height: 8rem;
     }
 
@@ -196,7 +198,6 @@ html {
 
     .order-summary__annual-plan div p:nth-child(2) {
         font-size: 1.4rem;
-        letter-spacing: 0.02rem;
     }
 
     .order-summary__change {
@@ -220,10 +221,10 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: hsl(224, 23%, 72%);
     text-align: center;
-    margin-bottom: .8rem;
+    margin-bottom: .8em;
 }
 
 .attribution a {
