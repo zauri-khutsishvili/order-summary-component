@@ -62,18 +62,19 @@ body {
 }
 
 .order-summary__description {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     color: var(--desaturated-blue);
     line-height: 2.6rem;
-    margin-top: 1.58rem;
-    margin-bottom: 2rem;
+    letter-spacing: -0.013em;
+    margin-top: 1.4rem;
+    margin-bottom: 2.18rem;
 }
 
 .order-summary__plan {
     width: 78.5%;
     height: 9.92rem;
     margin: 0 auto;
-    background-color: hsl(230, 75%, 98%)/*var(--very-pale-blue)*/;
+    background-color: var(--very-pale-blue);
     border-radius: 1.28rem;
     display: flex;
     justify-content: space-between;
@@ -97,13 +98,14 @@ body {
     font-size: 1.6rem;
     font-weight: 900;
     color: var(--dark-blue);
+    margin-top: -0.1rem;
     margin-bottom: .5rem;
 }
 
 .order-summary__annual-plan div p:nth-child(2) {
     color: var(--desaturated-blue);
-    font-size: 1.6rem;
-    letter-spacing: 0.017em;
+    font-size: 1.65rem;
+    letter-spacing: 0.003em;
 }
 
 .order-summary__change {
