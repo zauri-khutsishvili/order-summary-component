@@ -19,6 +19,7 @@ html {
 
 body {
     height: 100vh;
+    min-height: 80rem;
     margin: 0 6.4%;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url("../images/pattern-background-desktop.svg");
@@ -108,6 +109,7 @@ body {
 }
 
 .order-summary__change {
+    all: unset;
     margin-right: 2.4rem;
     font-size: 1.4rem;
     font-weight: 700;
@@ -161,6 +163,10 @@ body {
 }
 
 @media (max-width: 520px) {
+    body {
+        min-height: 66.5rem;
+    }
+
     .order-summary {
         max-width: 32.7rem;
         min-height: 56.7rem;
